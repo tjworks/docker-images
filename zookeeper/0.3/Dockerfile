@@ -54,7 +54,6 @@ RUN sed -i -r -e "s|(\\$\\{zookeeper.log.dir\\})|$ZK_HOME/logs|g" \
 #
 RUN chown -R zookeeper $ZK_HOME && \
     chgrp -R zookeeper $ZK_HOME
-USER zookeeper
 
 #
 # Expose the ports and set up volumes for the data, transaction log, and configuration
